@@ -1,0 +1,134 @@
+#container{
+    position: relative;
+    width: 300px;
+    height: 250px;
+    border: solid 1px black;
+    overflow: hidden;
+}
+#bg-img{
+    position: absolute;
+    width: 455px;
+    height: 250px;
+    transform: translateX(0);
+}
+#box1{
+    position: absolute;
+    width: 313px;
+    height: 387px;
+    background-color: rgb(4, 65, 126);
+    transform: rotate(51deg);
+    left: -176px;
+    top: -384px;
+    opacity: 0.8;
+    border: solid 2px white;
+}
+#box2{
+    position: absolute;
+    width: 260px;
+    height: 358px;
+    background-color: rgb(4, 65, 126);
+    transform: rotate(52deg);
+    right: -155px;
+    bottom: -333px;
+    opacity: 0.8;
+    border: solid 2px white;
+}
+/* #box1{
+    position: absolute;
+    border-top: 10px solid blue;
+    border-right: 23px solid transparent;
+    border: solid 3px black;
+    opacity: 0.6;
+    transform: translateY(0px);
+} */
+#text1{
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    top: 13px;
+    left: 0;
+    transform: translateX(-115px);
+    font-size: 24px;
+    opacity: 0;
+}
+#text1.move{
+    animation: text-move 0.5s;
+    opacity: 1;
+    transform: translateX(17px);
+}
+@keyframes text-move{
+    0%{transform: translateX(-115px);}
+    90%{transform: translateX(26px);}
+    100%{transform: translateX(17px);}
+}
+#text2{
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    top: 39px;
+    left: 0;
+    transform: translateX(-108px);
+    font-size: 25px;
+    opacity: 0;
+}
+#text2.move{
+    animation: move-text 0.5s;
+    opacity: 1;
+    transform: translateX(17px);
+}
+@keyframes move-text{
+    0%{transform: translateX(-108px);}
+    90%{transform: translateX(26px);}
+    100%{transform: translateX(17px);}
+}
+#text3{
+    position: absolute;
+    top: 70px;
+    left: 17px;
+     font-family:sans-serif;
+     font-size: 14px;
+    color: lightgray;
+    opacity: 0;
+}
+#text4{
+    position: absolute;
+    top: 86px;
+    left: 17px;
+     font-family:sans-serif;
+     font-size: 14px;
+    color: lightgray;
+    opacity: 0;
+}
+#btn{
+    position: absolute;
+    bottom: 27px;
+    right: 13px;
+    width: 0px;
+    height: 25px;
+
+
+}
+#read{
+    position: absolute;
+    bottom: 31px;
+    right: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0px;
+    opacity: 0;
+    
+}
+#link{
+    position: absolute;
+    bottom: 0;
+    right: 13px;
+    transform: translateY(15px);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: lightgrey;
+}
+#logo{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    transform: translateY(-17px);
+}
